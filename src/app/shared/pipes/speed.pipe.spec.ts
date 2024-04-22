@@ -18,8 +18,8 @@ describe('SpeedPipe', () => {
   });
 
   it('should correctly convert speed to Mbps', () => {
-    expect(pipe.transform(1000000)).toBe('1.00 Mbps');
-    expect(pipe.transform(2000000)).toBe('2.00 Mbps');
-    expect(pipe.transform(2500000)).toBe('2.50 Mbps');
+    expect(pipe.transform(1000000)).toBe('1 Mbps');
+    expect(pipe.transform(2000000)).toBe('2 Mbps');
+    expect(pipe.transform(10000000)).toBe('10 Mbps');
   });
 });

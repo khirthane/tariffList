@@ -12,6 +12,6 @@ export class SpeedPipe implements PipeTransform {
 
     const MbpsSpeed = speed / 1000000;
 
-    return MbpsSpeed.toFixed(2) + ' Mbps';
+    return MbpsSpeed.toFixed(0) + ' Mbps';
   }
 }

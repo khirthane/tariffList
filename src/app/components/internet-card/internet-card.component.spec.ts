@@ -52,9 +52,9 @@ describe('InternetCardComponent', () => {
     );
     expect(
       element.querySelector('.download-speed').textContent.trim()
-    ).toContain('12.00 Mbps');
+    ).toContain('12 Mbps');
     expect(element.querySelector('.upload-speed').textContent.trim()).toContain(
-      '6.00 Mbps'
+      '6 Mbps'
     );
 
     expect(element.querySelectorAll('.tariff-benefit li').length).toBe(4);
