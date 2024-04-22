@@ -1,0 +1,57 @@
+[
+  {
+    "id": 1,
+    "name": "Pyur Speed 12",
+    "downloadSpeed": 12000000,
+    "uploadSpeed": 6000000,
+    "benefits": [
+      "Tariff benefit 1",
+      "Tariff benefit 2",
+      "Tariff benefit 3",
+      "Tariff benefit 4"
+    ],
+    "price": 123.45
+  },
+  {
+    "id": 2,
+    "name": "GigaZuhause 50 cables",
+    "downloadSpeed": 50000000,
+    "uploadSpeed": 4000000,
+    "benefits": [
+      "Tariff benefit 1",
+      "Tariff benefit 2",
+      "Tariff benefit 3",
+      "Tariff benefit 4"
+    ],
+    "price": 90.0
+  },
+  {
+    "id": 3,
+    "name": "Vodafone Cable Germany",
+    "downloadSpeed": 12000000,
+    "uploadSpeed": 6000000,
+    "benefits": ["Tariff benefit 1", "Tariff benefit 2", "Tariff benefit 3"],
+    "price": 123.45
+  },
+  {
+    "id": 4,
+    "name": "Pyur Speed ​​200",
+    "downloadSpeed": 200000000,
+    "uploadSpeed": 8000000,
+    "benefits": [
+      "Tariff benefit 1",
+      "Tariff benefit 2",
+      "Tariff benefit 3",
+      "Tariff benefit 4"
+    ],
+    "price": 120.0
+  },
+  {
+    "id": 5,
+    "name": "Pyur Speed ​​100 Young",
+    "downloadSpeed": 100000000,
+    "uploadSpeed": 2000000,
+    "benefits": ["Tariff benefit 1", "Tariff benefit 2"],
+    "price": 70.0
+  }
+]

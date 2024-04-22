@@ -1,0 +1,22 @@
+<app-navbar></app-navbar>
+
+<div class="max-w-screen-xl mx-auto p-5 w-full">
+  <div class="filters">
+    <select
+      id="countries"
+      class="form-select sm:w-48 sm:mt-0"
+      [(ngModel)]="sortType"
+      (change)="onSortList()"
+    >
+      <option selected value="">{{ intl.sort }}</option>
+      <ng-container *ngFor="let sort of sortList">
+        <option [value]="sort">{{ sort }}</option>
+      </ng-container>
+    </select>
+  </div>
+  <div class="tariff-list mt-6">
+    @for(tariff of filteredTariffList; track tariff.id) {
+    <app-internet-card app-internet-card [tariff]="tariff"></app-internet-card>
+    }
+  </div>
+</div>

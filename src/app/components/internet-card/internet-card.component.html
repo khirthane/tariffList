@@ -1,0 +1,72 @@
+@if (!!tariff) {
+<div class="card">
+  <!-- Tariff ID -->
+  <div class="tariff-count w-5">
+    {{ tariff.id }}
+  </div>
+  <!-- Tariff Name -->
+  <div class="tariff-name w-1/3">
+    {{ tariff.name }}
+  </div>
+  <div class="download-speed flex flex-col flex-1 gap-2">
+    <!-- Download Speed -->
+    <div class="download-speed">
+      <div class="hidden md:block">{{ intl.download }}</div>
+      <div class="flex gap-2 flex-col sm:flex-row">
+        <img
+          src="/assets/images/icons/download.svg"
+          class="bg-orange-100 w-8 rounded-full p-2"
+          alt="download speed"
+        />
+        <span class="flex items-center">
+          {{ tariff.downloadSpeed | secsToSpeed }}
+        </span>
+      </div>
+    </div>
+    <!-- Upload Speed -->
+    <div class="upload-speed hidden sm:block">
+      <div class="hidden md:block">{{ intl.upload }}</div>
+      <div class="flex gap-2 flex-col sm:flex-row">
+        <img
+          src="/assets/images/icons/upload.svg"
+          class="bg-orange-100 w-8 rounded-full p-2"
+          alt="upload speed"
+        />
+        <span>
+          {{ tariff.uploadSpeed | secsToSpeed }}
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- Tariff Benefits -->
+  <div class="tariff-benefit hidden md:block flex-1">
+    <ul class="list-disc text-sm">
+      @for(benefit of tariff.benefits; track benefit) {
+      <li>
+        {{ benefit }}
+      </li>
+      }
+    </ul>
+  </div>
+  <!-- Tariff Price Section -->
+  <div class="tariff-price-section flex flex-row sm:flex-col gap-3">
+    <div
+      class="tariff-price font-bold mb-4 text-right text-xl sm:text-3xl mt-0.5"
+    >
+      {{ tariff.price }}€
+    </div>
+    <div class="card-action">
+      <button class="primary-button flex items-center h-full">
+        <div class="mr-2 hidden sm:block">
+          {{ intl.toTarrif }}
+        </div>
+        <img
+          src="/assets/images/icons/right-arrow.svg"
+          class="w-3"
+          alt="Add tariff"
+        />
+      </button>
+    </div>
+  </div>
+</div>
+}
