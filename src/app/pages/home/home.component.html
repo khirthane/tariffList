@@ -9,9 +9,9 @@
       (change)="onSortList()"
     >
       <option selected value="">{{ intl.sort }}</option>
-      <ng-container *ngFor="let sort of sortList">
-        <option [value]="sort">{{ sort }}</option>
-      </ng-container>
+      @for (sort of sortList; track sort) {
+      <option [value]="sort">{{ sort }}</option>
+      }
     </select>
   </div>
   <div class="tariff-list mt-6">

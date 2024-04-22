@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
   searchTerm: string = '';
   sortType: string = '';
   sortList = Object.values(SortList);
+
   constructor(public intl: AppIntl, private internetService: InternetService) {}
 
   ngOnInit(): void {
